@@ -230,4 +230,3 @@ The tool feeds into the final Playbook component (monitoring systems), enabling 
 
 ---
 
-This case study demonstrates the Fairness Metrics Tool’s practical application, addressing the loan system’s fairness challenges while providing a reusable framework for other AI systems. If the VP requires additional details or a demo of the tool, I can arrange a follow-up with the engineering team.
