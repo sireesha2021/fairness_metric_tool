@@ -61,6 +61,7 @@ Bars include 95% confidence intervals, with color-coding (red for p < 0.05, gree
 Reference lines indicate acceptable thresholds (e.g., TPRD < 0.1).
 Example (simulated for presentation):
 
+![Disparities](https://github.com/user-attachments/assets/e7a8c488-6bc3-4967-af75-f404962a801f)
 
  
 Intersectional Heatmap:
@@ -69,9 +70,9 @@ Color gradient (green to red) indicates disparity magnitude; opacity reflects sa
 Example (simulated for presentation): Disparity Chart 
 
 
-![Disparities](https://github.com/user-attachments/assets/3e11ab4b-140a-4995-87d0-51ac44c008ca)
+![chart (1)](https://github.com/user-attachments/assets/5a3ff94e-d9af-462f-b895-7c17b7b25b33)
 
-![Disparities](https://github.com/user-attachments/assets/d75d814c-4bb6-4a22-a8c7-f5138c24e024)
+
 
 Reporting Template:
 A one-page summary with key metrics, confidence intervals, p-values, and actionable recommendations.
