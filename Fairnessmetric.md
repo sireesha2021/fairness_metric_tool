@@ -60,7 +60,9 @@ A bar chart displaying TPRD, FNRD, and DPD across demographic groups (e.g., gend
 Bars include 95% confidence intervals, with color-coding (red for p < 0.05, green for non-significant).
 Reference lines indicate acceptable thresholds (e.g., TPRD < 0.1).
 Example (simulated for presentation):
-{
+
+{![image (2)](https://github.com/user-attachments/assets/1fb47555-7aa1-420b-abdc-e3c8af5f2cb8)
+
   "type": "bar",
   "data": {
     "labels": ["Gender (M vs. F)", "Age (<30 vs. 30+)", "Intersection (F, <30)"],
