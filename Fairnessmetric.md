@@ -61,106 +61,18 @@ Bars include 95% confidence intervals, with color-coding (red for p < 0.05, gree
 Reference lines indicate acceptable thresholds (e.g., TPRD < 0.1).
 Example (simulated for presentation):
 
-{![image (2)](https://github.com/user-attachments/assets/1fb47555-7aa1-420b-abdc-e3c8af5f2cb8)
 
-  "type": "bar",
-  "data": {
-    "labels": ["Gender (M vs. F)", "Age (<30 vs. 30+)", "Intersection (F, <30)"],
-    "datasets": [
-      {
-        "label": "TPRD",
-        "data": [0.15, 0.12, 0.20],
-        "backgroundColor": ["#FF6B6B", "#4ECDC4", "#FF6B6B"],
-        "borderColor": ["#C0392B", "#2E8B57", "#C0392B"],
-        "borderWidth": 1
-      },
-      {
-        "label": "FNRD",
-        "data": [0.18, 0.10, 0.25],
-        "backgroundColor": ["#FF6B6B", "#4ECDC4", "#FF6B6B"],
-        "borderColor": ["#C0392B", "#2E8B57", "#C0392B"],
-        "borderWidth": 1
-      },
-      {
-        "label": "DPD",
-        "data": [0.10, 0.08, 0.15],
-        "backgroundColor": ["#4ECDC4", "#4ECDC4", "#FF6B6B"],
-        "borderColor": ["#2E8B57", "#2E8B57", "#C0392B"],
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "scales": {
-      "y": {
-        "beginAtZero": true,
-        "title": {
-          "display": true,
-          "text": "Disparity Magnitude"
-        }
-      },
-      "x": {
-        "title": {
-          "display": true,
-          "text": "Demographic Comparison"
-        }
-      }
-    },
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Fairness Disparities in Loan Approval System"
-      }
-    }
-  }
-}
+ 
 Intersectional Heatmap:
 A heatmap showing TPRD across intersectional groups (e.g., gender × age).
 Color gradient (green to red) indicates disparity magnitude; opacity reflects sample size.
-Example (simulated for presentation):
-{
-  "type": "matrix",
-  "data": {
-    "datasets": [
-      {
-        "label": "Intersectional TPRD",
-        "data": [
-          { "x": "Male, <30", "y": "Female, <30", "v": 0.20, "sampleSize": 150 },
-          { "x": "Male, 30+", "y": "Female, 30+", "v": 0.10, "sampleSize": 500 },
-          { "x": "Male, <30", "y": "Female, 30+", "v": 0.15, "sampleSize": 300 }
-        ],
-        "backgroundColor": (ctx) => {
-          const value = ctx.raw.v;
-          return value > 0.15 ? "rgba(255, 107, 107, 0.8)" : "rgba(78, 205, 196, 0.8)";
-        },
-        "borderColor": "#2E8B57",
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "scales": {
-      "x": {
-        "title": {
-          "display": true,
-          "text": "Demographic Group 1"
-        }
-      },
-      "y": {
-        "title": {
-          "display": true,
-          "text": "Demographic Group 2"
-        }
-      }
-    },
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Intersectional Fairness Heatmap"
-      }
-    }
-  }
-}
+Example (simulated for presentation): Disparity Chart 
+
+
+![Disparities](https://github.com/user-attachments/assets/3e11ab4b-140a-4995-87d0-51ac44c008ca)
+
+![Disparities](https://github.com/user-attachments/assets/d75d814c-4bb6-4a22-a8c7-f5138c24e024)
+
 Reporting Template:
 A one-page summary with key metrics, confidence intervals, p-values, and actionable recommendations.
 Includes a section for small sample warnings and intersectional findings.
